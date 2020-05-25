@@ -4,7 +4,114 @@
     <meta charset="utf-8">
     <title>Bitch peas</title>
   </head>
+
   <body>
-    <h1>Where do I get my protein, man?!</h1>
+    <header>
+      HEADER element - some header information goes here. Usually consists of
+      company logo, some tag line, etc. Sometimes, navigation is contained in
+      the header as well.
+      <nav>
+        NAV element - usually contains link to different
+        parts of the web site.
+      </nav>
+    </header>
+
+    <h1 id="top">Main heading of the page: HTML basics</h1>
+    <h2>Divs and Spans</h2>
+    <div>
+      *** DIV 1: div is most generic block-level element ***
+    </div>
+    <div class="">
+      *** DIV 2: Following right after div 1 ***
+    </div>
+    <span> *** SPAN 1: Following right after div 2, span is most generic inline element ***</span>
+    <div class="">
+      *** DIV 3: Following right after span 1
+      <span>*** SPAN 2: INSIDE div 3, block-level elements can never be inside inline elements ***</span>
+      Continue content of div 3 ***
+    </div>
+
+    <h2>Semantic Elements</h2>
+    <section>
+      Section 1
+      <article> Article 1 </article>
+      <article> Article 2 </article>
+    </section>
+    <section>
+      Section 2
+      <article> Article 1 </article>
+      <article> Article 2 </article>
+    </section>
+
+    <h2>Unordered List</h2>
+    <div class="">
+      My typical dinner shopping list:
+      <ul>
+        <li>milk</li>
+        <li>donuts</li>
+        <li>cookies
+          <ul>
+            <li>chocolate</li>
+            <li>sugar</li>
+            <li>peanut butter</li>
+          </ul>
+        </li>
+        <li>marshmellows</li>
+      </ul>
+    </div>
+
+    <h2>Ordered List</h2>
+    <div class="">
+      Orio cookie eating procedure:
+      <ol>
+        <li>open box</li>
+        <li>take out cookie</li>
+        <li>make a double Oreo
+          <ol>
+            <li>peel off the top part</li>
+            <li>place another cookie in the middle</li>
+            <li>put back the top part</li>
+          </ol>
+        </li>
+        <li>enjoy :)</li>
+      </ol>
+    </div>
+
+    <h2>HTML Entities</h2>
+    Don't be afraid to be &lt;then 100% success &amp; &gt;more:
+
+    <p>&quot;It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring greatly, so that his place shall never be with those cold and timid souls who neither know victory&nbsp;nor&nbsp;defeat.&quot;</p>
+    <p>Theodore Roosevelt 1910 &copy;</p>
+
+    <h2>Internal Links</h2>
+    <section>
+      We can link to a file in the same directoras as this HTML file like this:
+      <a href="same-directors.html" title="same dir link">Linking to a file in the same directory</a>
+
+      <a href="same-directory.html" title="same dir link">
+        <div class=""> DIV Linking to a file in the same directory</div>
+      </a>
+    </section>
+
+    <h2>External Links</h2>
+    <section>
+      <p>Let's link to a useful page for web development.
+      <!-- link to web page WITH TARGET -->
+        <a href="https://validator.w3.org/" taget="_blank" title="Validate your markup">W3 Markup Validation</a>
+      </p>
+    </section>
+
+    <h2>Displaying Images</h2>
+    <p>
+      <img src="critic.png" alt="picture with critic definition" width="300" height="88">
+    </p>
+
+    <aside class="">
+      ASIDE element - some information that relates to the main topic ie related posts
+    </aside>
+    <footer>FOOTER element: particularity &copy;
+      <p><a href="#top">We can make it to the top</a>
+      </p>
+    </footer>
   </body>
 </html>
