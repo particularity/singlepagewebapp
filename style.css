@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box; /* not inheritable property */
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 120%; /* abolute: px; relative: %, em */
+}
+
+/* use id="box" to visualise box model for content  */
+#box {
+	background-color: blue;
+	padding: 10px;
+	border: 1px;
+	width: ;
+	height: ;
+	margin: ;
+	overflow: auto; /* default: visible; auto includes scroll bar if necessary, try to avoid */
+}
+
+/* use id="box" to visualise box model for content  */
+#bg {
+	background-color: blue;
+	background-image: url();
+	background-repeat: round;
+	background-position: top right;
+	background: blue no-repeat right url(); /* overwrites previous -properties  */
+}
+
+/******* Large devices only *******/
+@media (min-width: 1200px) {
+
+}
+
+/******* medium devices only *******/
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+/******* small devices only *******/
+@media (max-width: 991px) {
+
+}
